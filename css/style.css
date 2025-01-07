@@ -31,7 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 32px 15%;
-  background: transparent;
+  background: #1f2c47;
   transition: all ease .45s;
 }
 
@@ -245,6 +245,10 @@ background-color: #ddd;
 margin: 20px;
 }
 
+.skill {
+  padding: 10rem;
+}
+
 .skill h2 {
   text-align: center;
   font-size: 2rem;
@@ -412,6 +416,7 @@ color: white;
 .footer {
   background-color: #333;
   padding: 10px;
+  width: 100%;
 }
 
 .footer .copy {
@@ -538,7 +543,7 @@ color: white;
       display: flex;
       flex-direction: column;
       background: #0d162a;
-      transition: all 0.4s ease-in-out;
+      transition: 0.5s;
   }
   .navbar a {
       display: block;
@@ -549,7 +554,11 @@ color: white;
       font-weight: 400;
   }
   .navbar.open {
-      left: 0;
+      left: 50%;
+      padding: 15%;
+      margin: 72px;
+      justify-content: space-between;
+      text-align: start;
   }
 
   .menu-button {

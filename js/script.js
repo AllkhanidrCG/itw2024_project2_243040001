@@ -1,15 +1,7 @@
-// toggle class active
-const navbarNav = document.querySelector('.navbar-nav');
-// ketika hamburger menu di klik
-document.querySelector('#hamburger-menu').onclick = () => {
-    navbarNav.classList.toggle('active');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open')
 };
-
-// klik di luar untuk menghilangkan nav
-const hamburger = document.querySelector('#hamburger-menu');
-
-document.addEventListener('click', function(e) {
-    if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-        navbarNav.classList.remove('active');
-    }
-})
